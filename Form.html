@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="Javascript" type="text/javascript" src="lib/jquery-1.11.1.js"></script>
+<script language="Javascript" type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+<script src="js/Form.js"></script>
+<!--<script src="php/databaseConnection.php"></script> -->
+</head>
+<body>
+<h1>WELCOME</h1>
+<p>ENTER YOUR EVENT NFORMATION</p>
+<br>
+<form id ="myForm" action ="php/databaseConnection.php" method="post">
+Name : <input type="text" name="name" id="person_name"><br><br>
+Email Id :<input type="text" name="email_id" id="person_email_id"><br><br>
+Phone Number :<input type="text" name="phone_number" id="person_phone_nunber"><br><br>
+Event Date :<input type="text" name="event_date" id="person_event_date"><br><br>
+Event Name :<input type="text" name="event_name" id="person_event_name"><br><br>
+<input type="submit" value="Submit" id="person_submit">
+<br><br>
+Search By Email_Id :<input type="text" name="searching_by_email_id" id="searching_by_email_id"><input type="submit" value="Search" id="searching_email_id">
+
+</form> 
+</body>
+</html>

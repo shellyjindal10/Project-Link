@@ -1,0 +1,303 @@
+#header_main_container{
+						background-color:#000040;
+						height:90px;
+						width:100%;
+}
+#hi_container{
+				height:50px;
+				width:50px;
+				position:absolute;
+				background-color:#ffffff;
+				margin-left:200px;
+				margin-top:20px;
+}
+
+.hi{
+	font-family:"sans-serif";
+	font-style:"italic";
+	font-size: 1.8em;
+	margin-left:10px;
+	margin-top:10px;
+	font-color:#000040;
+}
+
+#header_sub_container{
+
+						background-color:#c0c0c0;
+						height:30px;
+						width:100%;
+}
+#header_home{
+	          	margin-left:200px;
+    			font-family:"sans-serif";
+    			font-weight:bold;
+    			
+    			}
+
+#header_profile{
+				margin-left:300px;
+				margin-top:-20px;
+				font-family:"sans-serif";
+				font-weight:bold;
+}
+#advaced_fonting{
+					color:#F0FFFF;
+					margin-left:83%;
+					margin-top:-1.5%;
+}
+
+#header_profile_edit{
+	                  height:90px;
+	                  width:150px;
+	                  background-color:#c0c0c0;
+	                  position:absolute;
+	                  visibility:hidden;
+}
+#edit_profile{
+				margin-left:10px;
+}
+#your_updates{
+				margin-left:10px;
+}
+#profile{			
+			margin-left:14%;
+			margin-top:2%;
+			height:1100px;
+			width:60%;
+}
+#profile_top_container{
+
+				        margin-left:14%;
+						margin-top:2%;
+						height:200px;
+						width:68%;
+						border-style: solid;
+				    	border-width: 1px;
+}
+
+#profile_bottom_container{      
+						      margin-left:14%;
+						      margin-top:3%;
+							  height:900px;
+							  width:68%;
+							  border-style: solid;
+						      border-width: 1px;
+}
+
+#profile_picture{
+				
+			    margin-top:3%;
+			    margin-left:2%;
+			    height:83%;
+				width:30%;
+
+}
+
+#profile_title{
+				
+			    margin-top:-29.5%;
+			    margin-left:37%;
+			    height:83%;
+				width:60%;
+
+}
+#profile_name{
+				font-family:"sans-serif";
+				font-weight:bold;
+				font-size:200%;
+                margin-top:-1%;
+}
+#Job_Title{
+			font-family:"sans-serif";
+			font-size:120%;
+			margin-top:-9%;
+
+}
+#Industry{
+			font-family:"sans-serif";
+			font-size:100%;
+			margin-top:-5%;
+            color: #696969;
+}
+#current_position{
+					font-family:"sans-serif";
+					font-size:80%;
+					color:#808080;
+}
+#profile_backround{
+					border-style: solid;
+			    	border-width: 1px;
+			    	height:6%;
+					
+
+}
+#profile_summary{
+					border-style: solid;
+			    	border-width: 1px;
+			    	height:20%;
+
+}
+#profile_experience{
+					border-style: solid;
+			    	border-width: 1px;
+			    	height:20%;
+}
+#profile_education{
+					border-style: solid;
+			    	border-width: 1px;
+			    	height:20%;
+
+}
+#profile_addition_info{
+					
+			    	height:30%;
+
+}
+#background{
+			border-style: solid;
+			border-width: 1px;
+			height:40%;
+			width:20%;
+			background-color:#000080;
+}
+#background_title{
+					margin-top:-1%;
+					margin-left:12%;
+					color:#FFFAF0;
+}
+#summary_image{
+		       font-size:130%;
+		       font-family:"sans-serif";
+		       font-weight:bold;
+}
+#Experience_title{
+			       margin-left:12%;
+			       font-size:130%;
+			       font-family:"sans-serif";
+			       font-weight:bold;
+			       margin-top:-10%;
+}
+#Education_title{
+			       margin-left:12%;
+			       font-size:130%;
+			       font-family:"sans-serif";
+			       font-weight:bold;
+			       margin-top:-10%;
+}
+#summary_title{
+			       margin-left:12%;
+			       font-size:130%;
+			       font-family:"sans-serif";
+			       font-weight:bold;
+			       margin-top:-10%;
+}
+#addition_info_title{
+						margin-left:12%;
+						font-weight:bold;
+						font-family:"sans-serif";
+						font-size:115%;
+						color:#696969;
+}
+#personal_details{
+					margin-left:12%;
+					color:#D3D3D3;	
+}
+#edit_button{
+				margin-left:90%;
+				margin-top:-4%;
+				color:#000080;
+			    font-weight:bold;
+}
+.text_area{
+			border:1px;
+			height:70%;
+			width:98%;
+			margin-top:1%;
+}
+.save{
+		color:#000080;
+		background-color:#D3D3D3;
+}
+.logout_profile{
+				margin-left:1200px;
+				margin-top:-20px;
+				font-family:"sans-serif";
+				font-weight:bold;
+}
+.choose_file{
+	margin-top:-12%;
+
+}
+.upload_file{
+
+}
+
+.search_box{
+	margin-left:65%;
+	margin-top:4%;
+}
+#search_message{
+	margin-left:65%;
+	margin-top:-2%;
+	color:#FF0000;
+}
+.avancedSearch{
+
+}
+.right_side_container{
+						
+						margin-left:65%;
+						margin-top:-78%;
+						height:1125px;
+						
+}
+.right_side_upper_container{
+							
+							height:400px;
+}
+.right_side_title_container{
+							
+							height:60px;
+
+}
+.People_Title{
+	margin-left:10%;
+	color:#000000;
+	font-size:1.8em;
+	margin-top:-0.5%;
+
+}
+#people_container1{
+	               
+				    height:80px;
+
+}
+.show_more_container{
+						
+				    	height:60px;
+}
+.image_connect{
+				
+				   height:60px;
+				   width:60px;
+}
+.person_information{
+	 				
+				   margin-left:15%;
+				   margin-top:-13%;
+				   height:70px;
+}
+#person_connect_name{
+	                color:#0000FF;
+	                font-size:1em;
+}
+#person_connect_icon{
+					color:#0000FF;
+	                font-size:1em;
+	                margin-left:2%;
+	                margin-top:-2%;
+}
+#see_more{
+	     margin-left:80%;
+	     color:#0000FF;
+}

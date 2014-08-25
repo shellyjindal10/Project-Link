@@ -1,0 +1,101 @@
+.inbox_main_div{
+				border-style: solid;
+				border-width: 1px;
+				margin-top:1%;
+				margin-left:15%;
+				height:600px;
+				width:1000px;
+				border-color:#B6B6B4;
+}
+.inbox_title_div{
+	height:70px;
+    background-color:#66A3FF;
+}
+.inbox_image{
+	
+	height:70px;
+	width:70px;
+}
+#image_name{
+	margin-left:10%;
+	margin-top:-5%;
+	font-size: 1.8em;
+
+}
+.blank_space{
+				
+				height:10px;
+}
+.inboxSummary{
+				
+				height:520px;
+
+}
+.inboxSummaryLeft{
+					border-style: solid;
+					border-width: 1px;
+					height:520px;
+					width:200px;
+					background-color:#C1DAFF;
+                    border-color:#B6B6B4;
+}
+
+.inboxSummaryRight{
+                   border-color:#B6B6B4;
+                   height:520px;
+                   border-style: solid;
+					border-width: 1px;
+					border-color:#B6B6B4;
+					background-color:#C1DAFF;
+					margin-left:21%;
+					margin-top:-52.4%;
+
+}
+.message{
+	  margin-left:29px;
+	  color:#999980;
+	  font-weight:bold;
+}
+.inboxSummaryTo{
+				
+				margin-left:10%;
+				margin-top:3%;
+				height:10%;
+				width:600px;
+}
+.summaryTo{
+	       height:90%;
+				width:596px;
+
+}
+.inboxSummarySubject{
+					
+					margin-left:10%;
+					height:10%;
+				    width:600px;
+				    margin-top:3%;
+}
+.inboxSummaryMessage{
+	                margin-left:10%;
+					width:600px;
+					height:45%;
+					margin-top:3%;
+}
+.summarySubject{
+	width:596px;
+					height:87%;
+
+}
+.inboxSummarySendOrCancel{
+							margin-left:10%;
+							margin-top:3%;
+}
+#message_fonts{
+	
+}
+.sendMessages{
+	margin-left:29px;
+	  color:#999980;
+	  font-weight:bold;
+
+}

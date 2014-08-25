@@ -1,0 +1,144 @@
+#header_main_container{
+						background-color:#000040;
+						height:90px;
+						width:100%;
+}
+.logout_profile{
+				margin-left:1210px;
+				margin-top:-2.5%;
+				font-family:"sans-serif";
+				font-weight:bold;
+				width:10%;
+}
+#logout{
+	    color:#F0F8FF;
+}
+#hi_container{
+				height:50px;
+				width:50px;
+				position:absolute;
+				background-color:#ffffff;
+				margin-left:200px;
+				margin-top:20px;
+}
+
+.hi{
+	font-family:"sans-serif";
+	font-style:"italic";
+	font-size: 1.8em;
+	margin-left:10px;
+	margin-top:10px;
+	font-color:#000040;
+}
+#serach_box{
+	margin-left:65%;
+
+}
+.advanced_container{
+	                height:1000px;
+	                width:1000px;
+					border-style: solid;
+				    border-width: 1px;
+				    border-color:#B6B6B4;
+				    margin-left:15%;
+}
+.advanced_right_container{
+							margin-left:25%;
+}
+.advanced_left_container{
+						border-style: solid;
+				    	border-width: 1px;
+				    	height:1000px;
+				    	width:250px;
+				    	border-color:#D1D0CE;
+
+}
+#search_label{
+			color:#157DEC;
+			font-weight:bold;
+}
+.search_button{
+	color:#FFFFFF;
+	background-color:#157DEC;
+}
+#advanced_input_type{
+						border-style: solid;
+				    	border-width: 1px;
+				    	border-color:#B6B6B4;
+}
+#advanced_people_search{
+						margin-top:-130%;
+						margin-left:26%;
+						color:#000040;
+						font-size: 2.2em;
+}
+.searchId{
+	        height:100px;
+			width:80%;
+			border-style: solid;
+			border-width: 1px;
+			margin-left:10%;
+			margin-top:1%;
+			border-color:#B6B6B4;
+
+}
+
+.search_profile_pic{
+	                height:100%;
+	                width:15%;
+					border-style: solid;
+					border-width: 1px;
+}
+
+.search_profile_name{
+					 margin-left:8%;
+					 font-size: 1.4em;
+                     color:#0020C2;
+                     margin-top: 0%;
+}
+.search_professional_title{
+							margin-left:8%;
+							margin-top:-3%;
+							color:#000000;
+}
+.search_country{
+				margin-left:8%;
+				margin-top:-2%;
+				font-size: 0.8em;
+				color:#B6B6B4;
+}
+.advanced_search_profile_main_div{
+	margin-left:25%;
+	margin-top:-75%;
+}
+#advaced_search_results{
+					border-style: solid;
+					border-width: 1px;
+					margin-left:34%;
+					height:850px;
+					width:50%;
+					margin-top:-65%;
+                    border-color:#B6B6B4;
+}
+#inboxDiv{
+			
+			margin-left:85%;
+			margin-top:-10%;
+}
+.inbox_button{
+			  	color:#FFFFFF;
+				background-color:#157DEC;
+				margin-top:-60%;
+				margin-left:-1%;
+}
+.search_result_desc{
+					
+					margin-left:16%;
+					margin-top:-17%;
+					height:80px;
+					width:370px;
+}
+.search_box{
+	margin-left:10%;
+	margin-top:8%;
+}

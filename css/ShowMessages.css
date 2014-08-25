@@ -1,0 +1,95 @@
+#header_main_container{
+						background-color:#000040;
+						height:90px;
+						width:100%;
+}
+
+#hi_container{
+				height:50px;
+				width:50px;
+				position:absolute;
+				background-color:#ffffff;
+				margin-left:200px;
+				margin-top:20px;
+}
+.hi{
+	font-family:"sans-serif";
+	font-style:"italic";
+	font-size: 1.8em;
+	margin-left:10px;
+	margin-top:10px;
+	font-color:#000040;
+}
+
+.logout_profile{
+	margin-left:80%;
+	margin-top:10%;
+}
+#logout{
+	margin-top:2%;
+	color:#FFFFFF;
+}
+.inboxSummary{
+				
+				height:520px;
+
+}
+.inboxSummaryLeft{
+					border-style: solid;
+					border-width: 1px;
+					height:610px;
+					width:200px;
+					background-color:#C1DAFF;
+                    border-color:#B6B6B4;
+}
+.inbox_title_div{
+	height:70px;
+    background-color:#66A3FF;
+}
+.inbox_image{
+	
+	height:70px;
+	width:70px;
+}
+#image_name{
+	margin-left:10%;
+	margin-top:-5%;
+	font-size: 1.8em;
+
+}
+.resultOfMessages{
+					border-style: solid;
+					border-width: 1px;
+					margin-left:15%;
+					margin-top:-36%;
+					height:620px;
+					background-color: #C1DAFF;
+}
+.send_from{
+	margin-top:17%;
+	color:#00001F;
+}
+.subject{
+	margin-top:-3%;
+	color:#000099;
+}
+.inBox{
+	margin-top:-3%;
+	color: #A6A6FF;
+}
+.delete_icon{
+			margin-left:97%;
+			height:18px;
+}
+.replyTo{
+			margin-left:94%;
+			height:18px;
+			width:18px;
+			margin-top:-1.8%;
+}
+.forward{
+			height:18px;
+			width:18px;
+			margin-left:91%;
+			margin-top:-1.8%;
+}

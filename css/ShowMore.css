@@ -1,0 +1,65 @@
+.people_you_may_know_div{
+							
+							margin-top:2%;
+							margin-left:15%;
+							height:50px;
+							width:1000px;
+}
+.image_div_people_you_may_know{
+								
+								height:50px;
+								width:60px;
+}
+#people_you_know_title{
+	margin-left:10%;
+	margin-top:-4%;
+	font-size: 1.8em;
+}
+.show_more_results{
+							
+							margin-top:2%;
+							margin-left:15%;
+							width:1000px;
+							height:1000px;
+}
+.createPersonProfileMainDiv{
+							border-style: solid;
+							border-width: 1px;
+							border-color:#B6B6B4;
+							height:300px;
+							width:190px;
+
+}
+.person_image_div{
+							
+							width:190px;
+							height:180px;
+
+}
+.person_information_div{
+							
+							height:80px;
+							width:190px;
+
+}
+#person_name{
+	margin-top:-1%;
+	margin-left:5%;
+	font-weight: bold;
+}
+.person_title{
+	margin-left:5%;
+	margin-top:-6%;
+	font-size: 0.8em;
+}
+.person_country{
+	margin-left:5%;
+	font-size: 0.7em;
+	margin-top:-3%;
+}
+#person_connect{
+	margin-left:30%;
+	margin-top:-0.5%;
+	color:#0000FF;
+	font-weight: bold;
+}
