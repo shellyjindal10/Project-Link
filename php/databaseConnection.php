@@ -130,7 +130,7 @@
 			} else {
 				    echo "<br/>";
 					echo 'Message has been sent.';
-					header('Refresh: 5; URL=http://localhost:8080/Shelly/ui/ThanksYouPage.html');
+					header('Refresh: 5; URL=http://localhost/Project-Link/ui/ThanksYouPage.html');
 			}
 	    };
 

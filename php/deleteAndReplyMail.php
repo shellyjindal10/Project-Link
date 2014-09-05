@@ -11,7 +11,7 @@
        							   $messageId_delete_query = "DELETE FROM receipt WHERE Message_id='$message_id'";
 				        		   $mssages_mail_result = mysqli_query($dbConn,$mail_delete_query);
 				        		   $messageId_delete_result = mysqli_query($dbConn,$messageId_delete_query);
-				        		   header('Refresh: 1; URL=http://localhost:8080/Shelly/php/showMessages.php');
+				        		   header('Refresh: 1; URL=http://localhost/Project-Link/php/showMessages.php');
            }
 
            if($action=='reply'){ 
@@ -22,11 +22,11 @@
                                           $email_id = $row['Sender_Email_Id'];
                                           $subject = $row['Sender_subject'];
 				                   }
-				                   header('Refresh: 0; URL=http://localhost:8080/Shelly/php/inbox.php?email_to='.$email_id.'&subject='.$subject);
+				                   header('Refresh: 0; URL=http://localhost/Project-Link/php/inbox.php?email_to='.$email_id.'&subject='.$subject);
 			}
 			if($action=='forward'){
 									
-				                   header('Refresh: 0; URL=http://localhost:8080/Shelly/php/inbox.php?message_id='.$message_id);
+				                   header('Refresh: 0; URL=http://localhost/Project-Link/php/inbox.php?message_id='.$message_id);
 			}
 
 			

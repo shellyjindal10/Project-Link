@@ -1,8 +1,8 @@
 <?php
+		session_start();
 		include "../php/common/databaseConnected.php";
 		$id = $_GET['id'];
-		$action=$_GET['action'];
-		session_start();
+		$action=$_GET['action'];		
 		$username=$_SESSION["username"];
 		$dbConn=connectToDb();
 

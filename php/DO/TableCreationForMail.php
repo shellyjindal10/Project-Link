@@ -1,7 +1,7 @@
 <?php 
 
-	   include "../common/databaseConnected.php";
-	   $dbConn=connectToDb();
+	include "../common/databaseConnected.php";
+	$dbConn=connectToDb();
 
 
 

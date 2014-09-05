@@ -1,3 +1,7 @@
+<?php
+		session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,11 +50,13 @@
         		</div>
         		<div class="show_more_results">
         		<?php 
-        				session_start();
+        				
         				include "common/databaseConnected.php";
         				$userName=$_SESSION['login_username'];
         				$db = connectToDb();
-        				$sql = "SELECT * FROM jinshelly_signup WHERE  Email !='$userName'";
+        				$sql = "SELECT * FROM jinshelly_signup WHERE  Email != '$userName'";
+        				//$sql = "SELECT * FROM jinshelly_signup WHERE  Email NOT IN ('$userName','SELECT To_Email FROM NumberofFriendsToConnect WHERE From_Email = '$userName'')";
+        				//echo $sql;
         				$result = mysqli_query($db,$sql);
         				echo "<table border=1><tr><td>&nbsp;</td>";
         				$count=0;
@@ -99,7 +105,9 @@
 								<p class="person_country"><?php echo $country?></p>
 								
 						</div>
-						<p id="person_connect">Connect</p>
+						<p id="person_connect">
+								<a href ="../php/connectToFriends.php?connect_to=<?php echo $email?>" title="connect" class="connectToFriends">Connect</a>
+						</p>
 				</div>
 				<br>
 				<?php

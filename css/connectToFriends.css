@@ -1,0 +1,49 @@
+.connectToFriendsMainDiv{
+			background-color:#D8D8D8;
+			margin-left:30%;
+			margin-top:6%;
+			width:40%;
+			height:500px;
+}
+.InviteNameforConnections{
+			margin-left:6%;
+			margin-top:2%;
+			height:40px;
+			width:89%;
+}
+.mailIcon{
+			height:40px;
+			width:40px;
+}
+#InviteTo{
+	margin-left:10%;
+	margin-top:-4.5%;
+}
+.ChoseRelationWithToConnect{
+							
+				    		margin-left:9%;
+				    		margin-top:2%;
+				    		width:80%;
+				    		height:350px;
+}
+.ChoseRelationWithToConnectDiv1{
+				    		margin-left:7%;
+				    		height:30px;
+
+}
+#howDuKnowDiv{
+	margin-top:-0.1%;
+}
+.radioButtonToConnect{
+				    	margin-left:7%;
+				    	height:300px;
+				    	margin-top:2%;
+}
+#textAreaConnectToFriends{
+	margin-top:-1.5%;
+}
+#sendMessageForConnectingFriends{
+	margin-top:6%;
+	margin-left:40%;
+	background-color:#4169E1;
+}

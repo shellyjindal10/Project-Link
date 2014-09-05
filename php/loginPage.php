@@ -5,6 +5,8 @@
 	   $username = $_POST['username'];
 	   $_SESSION['login_username']=$username;
        $password = $_POST['password'];
+      // echo $username;
+       //echo "<br/>".$password;
        
 
        $dbConn=connectToDb();
@@ -12,13 +14,13 @@
        if($check_enter_for_sign_up=='signedUp'){
        	    $check_for_entry = insertOrUpdate($username,$password,$dbConn);
        	    if($username){
-       	    	header('Refresh: 1; URL=http://localhost:8080/Shelly/ui/HomePage.php?user='.$username);
+       	    	header('Refresh: 1; URL=http://localhost/Project-Link/ui/HomePage.php?user='.$username);
         		exit();
         }
        	    
        }else{
        	   echo "<br/>"."The user needs to Sign Up first!!";
-       	   header('Refresh: 4; URL=http://localhost:8080/Shelly/ui/Login.html');
+       	   header('Refresh: 4; URL=http://localhost/Project-Link/ui/Login.html');
        }
        
        //check in the db has this entry on this in the db , if the 
@@ -28,8 +30,6 @@
 				if (mysqli_connect_errno()) {
 					echo "<br/>";
 					echo "DB Connection Failed";
-				}else{
-					echo "<br/>";
 				}
 				return $con;
        }
@@ -41,7 +41,7 @@
      	      $result->close();
 
 			  if($row_cnt!=0){
-			       	        echo "<br/>";
+			       	        //echo "<br/>";
 					       	$Update = "UPDATE login_information SET Password ='$password' WHERE Username='$username'";
 					        mysqli_query($dbConn,$Update);
 			  }else{

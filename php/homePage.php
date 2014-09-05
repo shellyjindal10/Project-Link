@@ -33,7 +33,7 @@ if(isset($name)){
 							}
 				}else{
 				            echo "Extension of file is not jpg/jpeg and must be 2mb or less"."<br/>"."Reload the file again";
-				            header("Refresh: 1; URL=http://localhost:8080/Shelly/ui/HomePage.php");
+				            header("Refresh: 1; URL=http://localhost/Project-Link/ui/HomePage.php");
 				}			
 		}
 }

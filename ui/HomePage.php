@@ -1,3 +1,7 @@
+<?php 
+		session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,8 +36,7 @@
 </head>
 <body>
       <?php
-		      	$url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-				session_start();
+		      	$url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];				
 				if ((!(isset($_SESSION['username']))) && (!(isset($_GET['user'])))){
 					Header('location:login.html');
 				}
@@ -283,7 +286,10 @@
 									    		<p id="person_connect_name"><?php echo $name ?></p>
 									    		<p id="person_connect_icon">
 											    		<img id='connect_icon' border='0' src='../image/plus-icon.png' 
-											             name='connect_profile_pic'  width='4%' height='4%'>Connect
+											             name='connect_profile_pic'  width='4%' height='4%'>
+											             <a href ="../php/connectToFriends.php?connect_to=<?php echo $email_id?>" title="connect" class="connectToFriends">
+											             		Connect
+											             </a>
 									    		</p>
 									    </div>
 									    <?php 

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +11,7 @@
 <?php
 		include "../php/common/databaseConnected.php";
 		$id = $_GET['id'];
-		$action=$_GET['action'];
-		session_start();
+		$action=$_GET['action'];		
 		$test_url=$_SERVER['REQUEST_URI'];	
 		$username=$_SESSION["username"];
 		$dbConn=connectToDb();

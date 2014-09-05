@@ -39,7 +39,7 @@ if($is_item_emailId==0){//search item is email id
 						$result = mysqli_query($dbConn,$query);
 						while ($row = mysqli_fetch_array($result)){
 							    $email_id = $row['Email'];
-							    header('Refresh: 1; URL=http://localhost:8080/Shelly/ui/HomePage.php?user='.$email_id);	
+							    header('Refresh: 1; URL=http://localhost/Project-Link/ui/HomePage.php?user='.$email_id);	
 						}
 }
 if($is_item_emailId==1){// search item is not an email id, it can be First Name or Last Name
@@ -57,7 +57,7 @@ if($is_item_emailId==1){// search item is not an email id, it can be First Name 
 												    createSearchIdDiv($row['FirstName'],$row['LastName'],$row['company_name'],$row['job_title'],$row['country'],$row['Email']);
 										}
 										if($countFirstName==1){
-											header('Refresh: 1; URL=http://localhost:8080/Shelly/ui/HomePage.php?user='.$email_id);	
+											header('Refresh: 1; URL=http://localhost/Project-Link/ui/HomePage.php?user='.$email_id);	
 										}
 						}else{
 										$query = "select * from jinshelly_signup where LastName  ='$searchItem'";
@@ -72,12 +72,12 @@ if($is_item_emailId==1){// search item is not an email id, it can be First Name 
 														    //header('Refresh: 1; URL=http://localhost:8080/Shelly/ui/HomePage.php?user='.$email_id);							    
 												}
 												if($countLastName==1){
-															header('Refresh: 1; URL=http://localhost:8080/Shelly/ui/HomePage.php?user='.$email_id);	
+															header('Refresh: 1; URL=http://localhost/Project-Link/ui/HomePage.php?user='.$email_id);	
 												} 
 										}else{//No Such Record in the Database
 															echo "<br/>"."No Such Records";
 															session_start();
-															header('Refresh: 1; URL=http://localhost:8080/Shelly/ui/HomePage.php?user='.$_SESSION['login_username']);
+															header('Refresh: 1; URL=http://localhost/Project-Link/ui/HomePage.php?user='.$_SESSION['login_username']);
 															?>
 															<script type="text/javascript">
 																	     $("#search_message").html("No Such Records!");

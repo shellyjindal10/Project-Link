@@ -1,0 +1,28 @@
+.InvitaionSendSucessfullyMainDiv{
+									
+			    					margin-left:10%;
+			    					width:68%;
+			    					margin-top:4%;
+			    					height:40px;
+			    					background-color: #E2FAB9;
+}
+.successIcon{
+				margin-left:2%;
+			    margin-top:0.3%;
+			    width:26px;
+			    height:26px;
+}
+#InvitaionTitle{
+	margin-left:10%;
+	margin-top:-1.5%;
+}
+.ConnectToMore{
+				margin-top:4%;
+				margin-left:70%;
+				width:10%;
+				height:30px;
+}
+#connectMoreTitle{
+	margin-left:4%;
+	margin-top:-1%;
+}
