@@ -7,7 +7,7 @@
 		<script src="../js/HomePage.js"></script>
 		        		           
 </head>
-<body>
+<bodyid="searchPageBackground" background="../image/background_searchPage.jpg" >
 		<div id="advanced_Search_MainDiv">
 
 		<div id="header_main_container">

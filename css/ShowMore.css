@@ -5,6 +5,11 @@
 							height:50px;
 							width:1000px;
 }
+#showMoreBackground{
+					line-height: 1;
+					background-repeat: no-repeat;
+					background-size: 100%;
+}
 .image_div_people_you_may_know{
 								
 								height:50px;
@@ -62,4 +67,8 @@
 	margin-top:-0.5%;
 	color:#0000FF;
 	font-weight: bold;
+}
+#createPersonProfileImage{
+	height:170px;
+	width:250px;
 }

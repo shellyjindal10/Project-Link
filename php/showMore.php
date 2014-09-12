@@ -7,11 +7,23 @@
 <head>
 		<script language="Javascript" type="text/javascript" src="../lib/jquery-1.11.1.js"></script>
 		<script language="Javascript" type="text/javascript" src="../lib/jquery-1.11.1.min.js"></script>
+		<script src ="../lib/js/bootstrap.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/HomePage.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="../css/ShowMore.css" media="screen" />
-		<script src="../js/HomePage.js"></script>		        		           
+		 <link rel="stylesheet" type="text/css" href="../css/FriendsPage.css" media="screen" />
+		<link type ="text/css" rel="stylesheet" href="../lib/css/bootstrap.css" />
+		<script src="../js/HomePage.js"></script>
+		<script src ="../lib/imageOnHover/jquery.contenthover.js"></script>
+		<script type="text/javascript">
+                $(document).ready(function(){	
+											$('#d4').contenthover({
+    																overlay_background:'#333'
+											});
+				});
+        </script>
+
 </head>
-<body>
+<body id="showMoreBackground" background="../image/background_showMore.jpg">
 <div id="main_container">
         		<div id="header_main_container">
         		      <div id="hi_container">
@@ -25,18 +37,25 @@
                  	  		</form>
                  	  </div>                  
         		</div>
-        		<div id="header_sub_container">
-        		            <a href="../php/homeClick.php" tite="header_home" id="header_home">Home</a>
-			        		<div id="header_profile">
-			        				Profile
-			        				<div id="header_profile_edit">
-			        						<p id="edit_profile">Edit Profile</p>
-			        						<p id="your_updates">Your Updates</p>
-			        				</div>
-
-			        		</div>
+        		<div id="header_sub_container" class="navbar">
+        				<div class="navbar-inner">
+        		            <ul class="nav nav-pills">
+        		             	<li><a href="../php/homeClick.php" tite="header_home" id="header_home">Home</a></li>
+			        		    <li><a href="#">Profile</a></li>
+			        			<li class="dropdown">
+			        				<a class="dropdown-toggle" data-toggle="dropdown" href ="#">
+			        					Photos<b class="caret"></b>
+			        				</a>
+			        				<ul class="dropdown-menu">
+			        				    <li><a href ="../php/photos.php?user=<?php echo $_SESSION['login_username'];?>">View Photos</a></li>
+			        			 		<li><a href="../php/imageGallery.php?user=<?php echo $_SESSION['login_username'];?>">Image Gallery</a></li>
+			        				</ul>
+			        			</li>
+			        			<li><a href="../php/friends.php?user=<?php echo $_SESSION['login_username'];?>">Friends</a></li>
+			        		</ul>
 			        		<div class ="logout_profile">
 			        		        <a href="../php/logout.php" tite="Logout">Logout</a>
+			        		</div>
 			        		</div>
         		</div>
         		<div class="people_you_may_know_div">
@@ -87,28 +106,43 @@
 
 			function createPersonProfile($firstName,$lastName,$jobTitle,$companyName,$country,$email){
 				?>
-				<div class="createPersonProfileMainDiv">
-						<div class="person_image_div">
-                        		<?php echo "<img id='person_image_div' border='0' src='../uploadedImages/".$email.".jpg"."' 
-									             name='profile_pic'  width='100%' height='100%' >"?>
-						</div>
-						<div class="person_information_div">
-								<p id="person_name"><?php echo $firstName." ".$lastName?></p>
-								<?php 
-											if($companyName!=null && $jobTitle!=null){
-								?><p class="person_title"><?php echo $jobTitle." "."at"." ".$companyName ?></p>
-								<?php }			elseif($companyName==null&&$jobTitle!=null){
-								?><p class="person_title"><?php echo $jobTitle." "?></p>
-								<?php }			elseif($jobTitle==null && $companyName!=null){
-								?><p class="person_title"><?php echo $companyName." "?></p>
-								<?php }	?>
-								<p class="person_country"><?php echo $country?></p>
-								
-						</div>
-						<p id="person_connect">
-								<a href ="../php/connectToFriends.php?connect_to=<?php echo $email?>" title="connect" class="connectToFriends">Connect</a>
-						</p>
+				<!--testing starts here -->
+				<div id="d4" style="width:300px; height:240px; background:#eee; ">
+    				<div style="padding:20px;">
+		        		<p><img src="../uploadedImages/<?php echo $email.".jpg"?>" id="createPersonProfileImage" /></p>
+		        		<p>
+		        		<?php
+                                if($jobTitle!=null && $companyName!=null){
+                                										  echo $jobTitle . " " . "at ".$companyName;
+                                                                          }elseif($jobTitle!=null && $companyName==null){
+                                                                          echo $jobTitle;
+                                                                          }else{
+                                                                          echo $companyName;
+                                                                          }
+                        ?>
+		        		</p>
+   				 	</div>
 				</div>
+				<div class="contenthover">
+				    <h3><?php echo $firstName. " ".$lastName?></h3>
+				    <p>
+				    <?php
+                                if($jobTitle!=null && $companyName!=null){
+                                										  echo $jobTitle . " " . "at ".$companyName;
+                                                                          }elseif($jobTitle!=null && $companyName==null){
+                                                                          echo $jobTitle;
+                                                                          }else{
+                                                                          echo $companyName;
+                                                                          }
+                    ?>
+				    </p>
+				    <p><a href="../php/connectToFriends.php?connect_to=<?php echo $email?>"class="mybutton">Connect</a></p>
+				</div>
+
+
+				<!--testing ends here -->
+				
+				
 				<br>
 				<?php
 

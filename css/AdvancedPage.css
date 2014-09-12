@@ -1,11 +1,17 @@
+#advancedPageBackground{
+						line-height: 1;
+						background-repeat: no-repeat;
+						background-size: 100%;
+}
+
 #header_main_container{
 						background-color:#000040;
 						height:90px;
 						width:100%;
 }
 .logout_profile{
-				margin-left:1210px;
-				margin-top:-2.5%;
+				margin-left:1532px;
+				margin-top:-2.0%;
 				font-family:"sans-serif";
 				font-weight:bold;
 				width:10%;
@@ -19,7 +25,7 @@
 				position:absolute;
 				background-color:#ffffff;
 				margin-left:200px;
-				margin-top:20px;
+				margin-top:33px;
 }
 
 .hi{
@@ -37,8 +43,6 @@
 .advanced_container{
 	                height:1000px;
 	                width:1000px;
-					border-style: solid;
-				    border-width: 1px;
 				    border-color:#B6B6B4;
 				    margin-left:15%;
 }
@@ -54,7 +58,7 @@
 
 }
 #search_label{
-			color:#157DEC;
+			color:#FF00FF;
 			font-weight:bold;
 }
 .search_button{
@@ -67,7 +71,7 @@
 				    	border-color:#B6B6B4;
 }
 #advanced_people_search{
-						margin-top:-130%;
+						margin-top:-133%;
 						margin-left:26%;
 						color:#000040;
 						font-size: 2.2em;
@@ -94,7 +98,7 @@
 					 margin-left:8%;
 					 font-size: 1.4em;
                      color:#0020C2;
-                     margin-top: 0%;
+                     margin-top: 11%;
 }
 .search_professional_title{
 							margin-left:8%;
@@ -112,18 +116,16 @@
 	margin-top:-75%;
 }
 #advaced_search_results{
-					border-style: solid;
-					border-width: 1px;
-					margin-left:34%;
+					margin-left:29%;
 					height:850px;
 					width:50%;
-					margin-top:-65%;
+					margin-top:-50%;
                     border-color:#B6B6B4;
 }
 #inboxDiv{
 			
 			margin-left:85%;
-			margin-top:-10%;
+			margin-top:-22%;
 }
 .inbox_button{
 			  	color:#FFFFFF;
@@ -134,7 +136,7 @@
 .search_result_desc{
 					
 					margin-left:16%;
-					margin-top:-17%;
+					margin-top:-12%;
 					height:80px;
 					width:370px;
 }

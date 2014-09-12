@@ -11,6 +11,11 @@
 				margin-left:200px;
 				margin-top:20px;
 }
+#homePageBackground{
+line-height: 1;
+					background-repeat: no-repeat;
+					background-size: 100%;
+}
 
 .hi{
 	font-family:"sans-serif";
@@ -36,7 +41,7 @@
 #header_sub_container{
 
 						background-color:#c0c0c0;
-						height:30px;
+						height:41px;
 						width:100%;
 }
 #header_home{
@@ -80,7 +85,7 @@
 #profile_top_container{
 
 				        margin-left:14%;
-						margin-top:2%;
+						margin-top:5%;
 						height:200px;
 						width:68%;
 						border-style: solid;
@@ -104,10 +109,17 @@
 				width:30%;
 
 }
+#profile_picture_forCorosel{
+				margin-top:5%;
+				margin-left:3%;
+				 height:83%;
+				width:30%;
+}
+
 
 #profile_title{
 				
-			    margin-top:-20%;
+			    margin-top:-22%;
 			    margin-left:37%;
 			    height:83%;
 				width:60%;
@@ -122,13 +134,13 @@
 #Job_Title{
 			font-family:"sans-serif";
 			font-size:120%;
-			margin-top:-7%;
+			margin-top:-2%;
 
 }
 #Industry{
 			font-family:"sans-serif";
 			font-size:100%;
-			margin-top:-3%;
+			margin-top:-1%;
             color: #696969;
 }
 #current_position{
@@ -201,7 +213,7 @@
 			       font-size:130%;
 			       font-family:"sans-serif";
 			       font-weight:bold;
-			       margin-top:-10%;
+			       margin-top:-6%;
 }
 #addition_info_title{
 						margin-left:12%;
@@ -209,6 +221,7 @@
 						font-family:"sans-serif";
 						font-size:115%;
 						color:#696969;
+						margin-top:4%;
 }
 #personal_details{
 					margin-left:12%;
@@ -225,6 +238,9 @@
 			height:70%;
 			width:98%;
 			margin-top:1%;
+            font-family: sans-serif;
+			font-size: 0.7em;
+
 }
 .save{
 		color:#000080;
@@ -232,7 +248,7 @@
 }
 .logout_profile{
 				margin-left:1700px;
-				margin-top:-20px;
+				margin-top:-76px;
 				font-family:"sans-serif";
 				font-weight:bold;
 }
@@ -246,7 +262,7 @@
 
 .search_box{
 	margin-left:65%;
-	margin-top:4%;
+	margin-top:3%;
 }
 #search_box_form{
 
@@ -299,7 +315,7 @@
 .person_information{
 	 				
 				   margin-left:15%;
-				   margin-top:-10%;
+				   margin-top:-7%;
 				   height:70px;
 }
 #person_connect_name{
@@ -371,4 +387,7 @@
 .InvitationNameOfThePerson{
 							margin-top:-2%;
 			    			font-size: 1.8em;
+}
+#myCaroselHeader{
+	margin-top:4%;
 }

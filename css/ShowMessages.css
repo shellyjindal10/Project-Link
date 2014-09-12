@@ -37,10 +37,16 @@
 .inboxSummaryLeft{
 					border-style: solid;
 					border-width: 1px;
-					height:610px;
+					height:694px;
 					width:200px;
 					background-color:#C1DAFF;
                     border-color:#B6B6B4;
+}
+.message{
+	margin-left:24%;
+}
+.sendMessages{
+	margin-left:24%;
 }
 .inbox_title_div{
 	height:70px;
@@ -53,16 +59,16 @@
 }
 #image_name{
 	margin-left:10%;
-	margin-top:-5%;
+	margin-top:-3%;
 	font-size: 1.8em;
 
 }
 .resultOfMessages{
 					border-style: solid;
 					border-width: 1px;
-					margin-left:15%;
-					margin-top:-36%;
-					height:620px;
+					margin-left:11%;
+					margin-top:-27%;
+					height:685px;
 					background-color: #C1DAFF;
 }
 .send_from{
@@ -91,5 +97,5 @@
 			height:18px;
 			width:18px;
 			margin-left:91%;
-			margin-top:-1.8%;
+			margin-top:-1.2%;
 }

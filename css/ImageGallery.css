@@ -1,0 +1,17 @@
+#imageGalleryBackground{
+						line-height: 1;
+						background-repeat: no-repeat;
+						background-size: 100%;
+
+}
+
+
+#thumbnail_image{
+	width:4%;
+	height:10%;
+}
+
+.linksForImageGallery{
+	margin-left:28%;
+	margin-top:10%;
+}

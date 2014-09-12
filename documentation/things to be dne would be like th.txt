@@ -1,7 +1,12 @@
 things to be dne would be like th
 
-1: give a option of uploading the pics .... and then there is an option for showing the pics, so in that case the carosul 
-2: In the header there are which will say the photos option , which will show the pics in the header 
-3: also i can use the nacigation bar in the form of the home  , profile and photos 
-4: also i can use the delete button to delete the pics 
-5: 
+
+1: bootstrap image gallery. 
+2: zoom in and zoom out : http://formstone.it/components/Zoomer/demo/index.html
+3: coin slideer : http://workshop.rs/projects/coin-slider/ ...this works is goodature 
+
+4: there is a feature which is called as the
+
+
+5: Friends should come with the with the nUmber of friends does it have .
+6: 

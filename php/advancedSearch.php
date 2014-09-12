@@ -9,7 +9,7 @@
 		<script src="../js/HomePage.js"></script>
 		        		           
 </head>
-<body>
+<body id="advancedPageBackground" background="../image/background_advancedPage.jpg">
 		<div id="advanced_Search_MainDiv">
 
 		<div id="header_main_container">
@@ -105,7 +105,6 @@
 
             $dbConn1=connectToDb();
             $query= "SELECT * FROM jinshelly_signup WHERE $param 1=1 ";
-		    echo $query;
 		    $result = mysqli_query($dbConn1,$query);
 		    ?>
 		    <div id ="advaced_search_results">

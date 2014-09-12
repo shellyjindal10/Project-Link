@@ -13,13 +13,15 @@
 		<script language="Javascript" type="text/javascript" src="../lib/jquery-1.11.1.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/HomePage.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="../css/ShowMore.css" media="screen" />
+		<link type ="text/css" rel="stylesheet" href="../lib/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="../css/connectToFriends.css" media="screen" />
-		<script src="../js/HomePage.js"></script>		        		           
+		<script src="../js/HomePage.js"></script>	
+		<script src ="../lib/js/bootstrap.js"></script>	        		           
 
 
 
 </head>
-<body>
+<body id="connectToFriendsPageBackground" background="../image/background_connectToFriendsPage.jpg">
 <div id="main_container">
         		<div id="header_main_container">
         		      <div id="hi_container">
@@ -33,20 +35,27 @@
                  	  		</form>
                  	  </div>                  
         		</div>
-        		<div id="header_sub_container">
-        		            <a href="../php/homeClick.php" tite="header_home" id="header_home">Home</a>
-			        		<div id="header_profile">
-			        				Profile
-			        				<div id="header_profile_edit">
-			        						<p id="edit_profile">Edit Profile</p>
-			        						<p id="your_updates">Your Updates</p>
-			        				</div>
-
-			        		</div>
+        		<div id="header_sub_container" class="navbar">
+        				<div class="navbar-inner">
+        		            <ul class="nav nav-pills">
+        		             	<li><a href="../php/homeClick.php" tite="header_home" id="header_home">Home</a></li>
+			        		    <li><a href="#">Profile</a></li>
+			        			<li class="dropdown">
+			        				<a class="dropdown-toggle" data-toggle="dropdown" href ="#">
+			        					Photos<b class="caret"></b>
+			        				</a>
+			        				<ul class="dropdown-menu">
+			        				    <li><a href ="../php/photos.php?user=<?php echo $_SESSION['login_username'];?>">View Photos</a></li>
+			        			 		<li><a href="../php/imageGallery.php?user=<?php echo $_SESSION['login_username'];?>">Image Gallery</a></li>
+			        				</ul>
+			        			</li>
+			        			<li><a href="../php/friends.php?user=<?php echo $_SESSION['login_username'];?>">Friends</a></li>
+			        		</ul>
 			        		<div class ="logout_profile">
 			        		        <a href="../php/logout.php" tite="Logout">Logout</a>
 			        		</div>
-        		</div>
+			        		</div>
+        		</div> 
         		<div class="connectToFriendsMainDiv">
 			        		<div class="InviteNameforConnections">
 			        				<div class="mailIcon">
@@ -78,9 +87,8 @@
 													<input type="radio" name="relation" value="I don’t know">I dont know <?php echo $name;?><br>
 											
 											<p id="personalNoteTitle">Include a personal note: (optional)</p>
-											<textarea rows="9" cols="66" name="textAreaConnectToFriends"  id="textAreaConnectToFriends">
-												    I had like to add you to my professional network on LinkedIn.
-													- <?php
+											<textarea rows="9" cols="66" name="textAreaConnectToFriends"  id="textAreaConnectToFriends">I had like to add you to my professional network on LinkedIn.        
+	- <?php
 															
 															$userName=$_SESSION['login_username'];															
         													$db = connectToDb();
