@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+//echo "hey i am inside the photoUpload.php";
+
 $name=$_FILES['file']['name'];
 $extension=strtolower(substr($name,strpos($name,'.')+1));
 $size=$_FILES['file']['size'];
@@ -9,6 +11,8 @@ $type=$_FILES['file']['type'];
 $tmp_name=$_FILES['file']['tmp_name'];
 $max_size=2097152;
 $error = $_FILES['file']['error'];
+
+$outFile = $name."thumbnail.jpg";
 
 if(isset($name)){
 		if(!empty($name)){

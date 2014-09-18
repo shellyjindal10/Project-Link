@@ -10,3 +10,44 @@ things to be dne would be like th
 
 5: Friends should come with the with the nUmber of friends does it have .
 6: 
+
+var AppointmentView = Backbone.View.extend({
+  render: function(){
+    var html = '<li>' +this.model.get('title') + '</li>';
+    $(this.el).html(html);
+  }
+
+});
+
+.dismiss{
+	margin-left:1%;
+	color:#FFFFFF;
+}
+
+<div class="NumberOfPoeplePaidMoney">
+</div>
+
+// when the add button is been clicked th
+- all the entries will be 
+
+
+2: things that needs to be done is like 
+- now put that message back in the js file so that it can be displayed that this email id does not exists in the database.
+- no dublicate entery should be there in the database .
+- 
+
+
+
+
+done 
+- get the count of the number of comma 
+- validate each email id in the comma  seperatead things is valid or not 
+- get the new plugins for the alert box .
+- make the button type inout as red when the wrong email address is been put there.
+- REmove the normal alert buttonfrom the js file and apply the customise plugin for the alerts 
+- each email id needs to be validated which is commas separted.
+- - create a table for the money Distribution which contains the field as , Person_who_Paid_the_Money , amount_to_be_Returned , Person_who_needs_To_ReturnMoney
+- database is taking the entry of the information which is been fed .
+- - make the ajax calal and pass all the information to the database.
+- check if the email id if that exists in the database.
+

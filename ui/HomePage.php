@@ -66,7 +66,14 @@
         				<div class="navbar-inner">
         		            <ul class="nav nav-pills">
         		             	<li class="active"><a href="../php/homeClick.php" tite="header_home" id="header_home">Home</a></li>
-			        		    <li><a href="#">Profile</a></li>
+			        		    <li class="dropdown">
+			        		    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			        		    		Profile<b class="caret"></b>
+			        		    	</a>
+			        		    	<ul class="dropdown-menu">
+			        				    <li><a href ="../php/splitsWise.php?user=<?php echo $_SESSION['login_username'];?>>">Splits Wise</a></li>
+			        				</ul>
+			        		    </li>
 			        			<li class="dropdown">
 			        				<a class="dropdown-toggle" data-toggle="dropdown" href ="#">
 			        					Photos<b class="caret"></b>

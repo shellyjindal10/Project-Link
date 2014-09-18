@@ -1,3 +1,7 @@
+<?php 
+		session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,8 +38,8 @@
 				        <div class="inboxSummaryLeft">
 				                <a href="../php/showMessages.php" tite="show_inbox_messages" class="show_inbox_messages">
 				        		<p class="message">Messages(<?php 
-				        											include "common/databaseConnected.php";				        											
-				        											session_start();
+				        											include "common/databaseConnected.php";	        											
+				        											
 				        											$dbConn2=connectToDb();
 				        											$senderEmailId=$_SESSION['login_username'];
 				        											$mail_query_countng = "select * from message where MessageToMailId='$senderEmailId'";
