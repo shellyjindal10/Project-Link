@@ -132,3 +132,116 @@
 }
 .invalid-data { border: 1px solid red; }
 
+#ExpenseeAdded{
+				margin-left: 89%;
+				margin-top: -5%;
+				height: 100px;
+				width: 94px;
+				background-color:#484848 ;
+				display:none;
+}
+#expenseAddedFonting{
+	font-size: 120%;
+	color:#FFFFFF;
+}
+#expenseAddedImage{
+				margin-left: 15%;
+				width: 65%;
+				height: 48px;
+}
+#expenseAddedImge{
+				display:none;
+}
+#dashboard_main_div{
+					border-style: solid;
+					border-width: 1px;
+					border-color:#B0B0B0;
+					margin-left: 30%;
+					width: 30%;
+					height: 700px;
+}
+#searchDivFRomDatabase{
+					border-style: solid;
+					border-width: 1px;
+					border-color:#B0B0B0;
+					margin-left: 21%;
+					width: 67%;
+					height: auto;
+					display:none;
+}
+#youOwe{
+					
+					width: 48%;
+					height:auto;
+}
+#youAreOwed{
+					
+					margin-left: 49%;
+					margin-top: -13.5%;
+}
+#dashboardTitle{
+					font-size: 2.8em;
+					margin-left: 36%;
+					margin-top: 1%;
+}
+#youOwedTitle{
+					color:#778899;
+					font-weight: bold;
+					margin-left: 33%;
+					margin-top: 4%;
+}
+#youAreOwedTitle{
+					color:#778899;
+					font-weight: bold;
+					margin-left: 25%;
+					margin-top: 9%;
+}
+.vertical-line{
+				  	width: 1px; /* Line width */
+				  	background-color: black; /* Line color */
+				  	height: 100%; /* Override in-line if you want specific height. */
+				  	float: left; 
+				  	margin-left: 49%;
+					margin-top: -3%;
+}
+#youAreOwedResult{
+					margin-left: 18%;
+}
+#youOwedResult{
+					margin-left: 17%;
+}
+#paymentTitle{
+					margin-left: 27%;
+					color:#696969;
+}
+#cashButtonDiv{
+					border-style: solid;
+					border-width: 1px;
+					border-color:#B0B0B0;
+					margin-top: -3%;
+					margin-left: 19%;
+					width: 256px;
+					height: 30px;
+}
+#payByPayPallButtonDiv{
+					border-style: solid;
+					border-width: 1px;
+					border-color:#B0B0B0;
+					margin-top: 2%;
+					margin-left: 19%;
+					width: 256px;
+					height: 30px;
+}
+#cashButton{
+         			width: 100%;
+					height: 100%;
+					background-color: #1E90FF;
+					color:#FFFFFF;
+}
+#PayPalButton{
+					width: 100%;
+					height: 100%;
+					background-color:#FF4500;
+					color:#FFFFFF;
+}
+

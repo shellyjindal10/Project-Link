@@ -11,31 +11,24 @@ things to be dne would be like th
 5: Friends should come with the with the nUmber of friends does it have .
 6: 
 
-var AppointmentView = Backbone.View.extend({
-  render: function(){
-    var html = '<li>' +this.model.get('title') + '</li>';
-    $(this.el).html(html);
-  }
-
-});
-
-.dismiss{
-	margin-left:1%;
-	color:#FFFFFF;
+class MessageForSplitsWise {
+    public $check_for_dublicate_entry = "";
+    public $check_for_emailExists_In_System  = "";
 }
 
-<div class="NumberOfPoeplePaidMoney">
-</div>
+$message = new MessageForSplitsWise();
+$message->firstname = "foo";
+$user->lastname  = "bar";
 
 // when the add button is been clicked th
 - all the entries will be 
 
 
 2: things that needs to be done is like 
-- now put that message back in the js file so that it can be displayed that this email id does not exists in the database.
-- no dublicate entery should be there in the database .
-- 
+- Make sure that you cannot enter your email id .
+- check the logic for like adding the person 
 
+-
 
 
 
@@ -50,4 +43,30 @@ done
 - database is taking the entry of the information which is been fed .
 - - make the ajax calal and pass all the information to the database.
 - check if the email id if that exists in the database.
+- no dublicate entery should be there in the database .
+- message for inserting the dublicate rows is getting the message when theere 
+- lets make sure that the amount , description , person wh has to pay the money ka email id should not be null .
+- check for the condition all non null values should not even gets printed.
+- now put that message back in the js file so that it can be displayed that this email id does not exists in the database.
+- there should be a notification which will be displed that some thing like Expense added with the click sign .
+- the div for the expense added image should gets hidden after 2 minutes.
+- CReate a div which is holding the dashborad 
+- make sure that the empty value should not even enter the ajax call 
+-  Make a total calculation , i owe sudip 6 $ and also 5 $ so i owe to sudip like total 
+- Lets make a search of the searching for the 
+
+
+
+for ($row = 0; $row < 4; $row++) {
+  echo "<p><b>Row number $row</b></p>";
+  echo "<ul>";
+  for ($col = 0; $col < 3; $col++) {
+    echo "<li>".$cars[$row][$col]."</li>";
+  }
+  echo "</ul>";
+}
+
+select a.amir, a.garib , a.paisa, (a.paisa-b.paisa)  from ( select Person_who_Paid_the_Money as amir , sum(amount_to_be_Returned) as paisa , Person_who_needs_To_ReturnMoney as garib  from MoneyDistribution where Person_who_Paid_the_Money="gautam.sudeep@gmail.com" group by Person_who_needs_To_ReturnMoney ) a  LEFT OUTER JOIN  (select Person_who_needs_To_ReturnMoney as garib , sum(amount_to_be_Returned ) as paisa , Person_who_Paid_the_Money as amir from MoneyDistribution where Person_who_needs_To_ReturnMoney ="gautam.sudeep@gmail.com" group by Person_who_Paid_the_Money ) b ON a.garib=b.amir;
+
+
 

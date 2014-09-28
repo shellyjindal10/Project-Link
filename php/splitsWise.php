@@ -74,6 +74,22 @@
              														$.bootstrapGrowl("The paragraph was clicked.");
   									});
             	});
+				function call_backend(page,div) {
+				        		         	var xmlhttp;
+											if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+											  xmlhttp=new XMLHttpRequest();
+											  }
+											else{// code for IE6, IE5
+											  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+											  }
+											xmlhttp.onreadystatechange=function(){
+											  if (xmlhttp.readyState==4 && xmlhttp.status==200){
+											    document.getElementById(div).innerHTML=xmlhttp.responseText;
+											    }
+											  }
+											xmlhttp.open("GET",page,true);
+											xmlhttp.send();
+				}
 			   
 		</script>
 			
@@ -120,19 +136,51 @@
 			        		</div>
         		</div> 
        </div>
+               
+			       <!-- the Concept of Splits Wise starts here -->
+			       <div class="well" id="buttonsForSplitsWise">
+			       			<button class="btn btn-danger">
+			       				<a data-toggle="modal" href="#myAddBillModel">
+			       					Add a Bill
+			       				</a>
+			       			</button>
+			       			<button class="btn" id="settleUpBTN">
+			       				<a data-toggle="modal" href="#mySettleUPModel">
+			       					Settle up
+			       				</a>
+			       			</button>
 
-       <!-- the Concept of Splits Wise starts here -->
-       <div class="well" id="buttonsForSplitsWise">
-       			<button class="btn btn-danger">
-       				<a data-toggle="modal" href="#myAddBillModel">
-       					Add a Bill
-       				</a>
-       			</button>
-       			<button class="btn" id="settleUpBTN">
-       				<a data-toggle="modal" href="#mySettleUPModel">
-       					Settle up
-       				</a>
-       			</button>
+			       </div>
+	   
+       <div id="ExpenseeAdded">
+       		<p id="expenseAddedFonting">EXPENSE ADDED</p>
+       		<div id="expenseAddedImage">
+       				<img border="0" src="../image/white-tick.png" alt="expenseAdded_icon" width="100%" height="100%" id="expenseAddedImge">
+       		</div>      		
+       </div>
+       <!-- Dash Board  Div added here -->
+       <div id="dashboard_main_div">
+               <p id="dashboardTitle">Dashboard</p>
+		       <div id="youOwe">
+		       		<p id="youOwedTitle">YOU OWE</p>
+		       		<!--Make an Ajax Call for the money you are owed-->
+		       		<p id="youOwedResult">
+				       	<script type="text/javascript">
+									call_backend('dashboardCalculations.php?action=youOwed','youOwedResult');
+						</script>
+					</p>		       		
+		       </div>
+		      <div class="vertical-line" style="height: 45px;">
+		      </div>
+		       <div id="youAreOwed">
+		       		<p id="youAreOwedTitle">YOU ARE OWED</p>
+		       		<!--Make an ajax call for the money you are owed -->
+		       		<p id="youAreOwedResult">
+		       			<script type="text/javascript">
+									call_backend('dashboardCalculations.php?action=youAreOwed','youAreOwedResult');
+						</script>
+		       		</p>
+		       </div>
        </div>
 
        <!-- Add Bill Model -->
@@ -144,9 +192,9 @@
       					<h3 class="headerMainHeader">Add a Bill
       					<button type="button" class="close" data-dismiss="modal" > &times;</button></h3>
       			    </div>
-
       			    <div class="addBillHeaderBody">      			    
-								With you and : <input type="text" name="usrname" placeholder="Enter names or email addresses" id="mytextInputType" onkeyup="myFunction()"><br>
+								With you and : <input type="text" name="usrname" placeholder="Enter names or email addresses" id="mytextInputType" autocomplete="off" onkeyup="myFunction()"><br>								
+								<div id="searchDivFRomDatabase"></div>
       			    </div>
       			    <hr id="lineAfterHeader">
       			</div>
@@ -171,7 +219,7 @@
       		    </div>
       		    <div class="modal-footer">
       		    		<button type="button" class="btn" data-dismiss="modal">Close</button>
-      		    		<button type="button" class="btn btn-primary" id="addtheFinalBillButton">Add</button>
+      		    		<button type="button" class="btn btn-primary" id="addtheFinalBillButton" data-dismiss="modal">Add</button>
       		    </div>
       		</div>
       	</div>
@@ -188,14 +236,18 @@
       						<button type="button" class="close" data-dismiss="modal" > &times;</button></h4>      						
       					</div>
       					<div class="addBillHeaderBody">      			    
-	      			    	<form action="#">
-									With you and : <input type="text" name="usrname" placeholder="Enter names or email addresses" id="mytextInputType" onkeyup="myFunction2();"><br>
-							</form>
+	      			    	<p id="paymentTitle">Choose a payment method</p>
       			    	</div>
       			    	<hr id="lineAfterHeader">  					
       			</div>
       			<div class="modal-body" id="Model-Body-hidden2">
-      					<p>Type your bill setllement information here </p>
+      					<!--Buttons option should come here -->
+      					<div id="cashButtonDiv">
+      							<button type="button" id="cashButton">Record a cash payment</button>
+      					</div>
+      					<div id="payByPayPallButtonDiv">
+      							<button type="button" id="PayPalButton">Send Money via PayPal</button>
+      					</div>
       		    </div>
       		    <div class="modal-footer">
       		    		<button type="button" class="btn" data-dismiss="modal">Cancel</button>
