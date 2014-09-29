@@ -27,7 +27,7 @@ $user->lastname  = "bar";
 2: things that needs to be done is like 
 - Make sure that you cannot enter your email id .
 - check the logic for like adding the person 
-
+- lets put the Profile splits wise everywhere now .
 -
 
 
@@ -66,7 +66,26 @@ for ($row = 0; $row < 4; $row++) {
   echo "</ul>";
 }
 
-select a.amir, a.garib , a.paisa, (a.paisa-b.paisa)  from ( select Person_who_Paid_the_Money as amir , sum(amount_to_be_Returned) as paisa , Person_who_needs_To_ReturnMoney as garib  from MoneyDistribution where Person_who_Paid_the_Money="gautam.sudeep@gmail.com" group by Person_who_needs_To_ReturnMoney ) a  LEFT OUTER JOIN  (select Person_who_needs_To_ReturnMoney as garib , sum(amount_to_be_Returned ) as paisa , Person_who_Paid_the_Money as amir from MoneyDistribution where Person_who_needs_To_ReturnMoney ="gautam.sudeep@gmail.com" group by Person_who_Paid_the_Money ) b ON a.garib=b.amir;
+select a.amir, a.garib , a.paisa, (a.paisa-b.paisa)  from 
+( select Person_who_Paid_the_Money as amir , sum(amount_to_be_Returned) as paisa , Person_who_needs_To_ReturnMoney as garib  from MoneyDistribution where Person_who_Paid_the_Money="gautam.sudeep@gmail.com" group by Person_who_needs_To_ReturnMoney ) a  
+LEFT OUTER JOIN  
+(select Person_who_needs_To_ReturnMoney as garib , sum(amount_to_be_Returned ) as paisa , Person_who_Paid_the_Money as amir from MoneyDistribution where Person_who_needs_To_ReturnMoney ="gautam.sudeep@gmail.com" group by Person_who_Paid_the_Money ) b ON a.garib=b.amir;
+
+select a.amir, a.garib ,  IFNULL((a.paisa-b.paisa),a.paisa)  from ( select Person_who_Paid_the_Money as amir , sum(amount_to_be_Returned) as paisa , Person_who_needs_To_ReturnMoney as garib  from MoneyDistribution where Person_who_Paid_the_Money="gautam.sudeep@gmail.com" group by Person_who_needs_To_ReturnMoney ) a  LEFT OUTER JOIN  (select Person_who_needs_To_ReturnMoney as garib , sum(amount_to_be_Returned ) as paisa , Person_who_Paid_the_Money as amir from MoneyDistribution where Person_who_needs_To_ReturnMoney ="gautam.sudeep@gmail.com" group by Person_who_Paid_the_Money ) b ON a.garib=b.amir;
+
+
+select Person_who_paid_the_Money ,sum(amount_to_be_Returned) as total ,Person_who_needs_To_ReturnMoney from MoneyDistribution where Person_who_Paid_the_Money = 'gautam.sudeep@gmail.com' group by Person_who_needs_To_ReturnMoney;
+
+select Person_who_paid_the_Money ,sum(amount_to_be_Returned) as total ,Person_who_needs_To_ReturnMoney from MoneyDistribution where Person_who_Paid_the_Money = 'gautam.sudeep@gmail.com' group by Person_who_needs_To_ReturnMoney;
+
+select a.amir , a.total , a.garib, b.firstname , b.lastname from (select Person_who_paid_the_Money as amir ,sum(amount_to_be_Returned) as total ,Person_who_needs_To_ReturnMoney as garib from MoneyDistribution where Person_who_Paid_the_Money = 'gautam.sudeep@gmail.com' group by Person_who_needs_To_ReturnMoney) a INNER JOIN (Select FirstName as firstname ,LastName as lastname ,Email as em from jinshelly_signup)b  ON 
+b.em = a.garib;
+
+ select a.Person_who_paid_the_Money ,sum(a.amount_to_be_Returned) as total ,a.Person_who_needs_To_ReturnMoney , b.FirstName from MoneyDistribution a , jinshelly_signup b where a.Person_who_Paid_the_Money = 'gautam.sudeep@gmail.com' and a.Person_who_needs_To_ReturnMoney = b.Email  group by a.Person_who_needs_To_ReturnMoney;
+
+
+
+
 
 
 
